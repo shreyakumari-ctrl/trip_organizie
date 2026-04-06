@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Adventure | Choose Your Next Memory</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">NextMemory.</div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover Trips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="btn btn-primary">Log In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="auth-section"
+        style="height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&auto=format&fit=crop&w=1308&q=80') center/cover;">
+        <div class="auth-card"
+            style="background: white; padding: 40px; border-radius: 12px; width: 100%; max-width: 400px; text-align: center; box-shadow: var(--shadow-lg);">
+            <h2 style="margin-bottom: 20px;">Start Your Journey</h2>
+            <p style="color: var(--text-muted); margin-bottom: 30px;">Create an account to unlock exclusive trips.</p>
+
+            <form id="signupForm">
+                <div class="form-group" style="margin-bottom: 20px; text-align: left;">
+                    <label style="display: block; margin-bottom: 8px; font-weight: 600;">Full Name</label>
+                    <input type="text" id="signupName" required
+                        style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px;">
+                </div>
+
+                <div class="form-group" style="margin-bottom: 20px; text-align: left;">
+                    <label style="display: block; margin-bottom: 8px; font-weight: 600;">Email Address</label>
+                    <input type="email" id="signupEmail" required
+                        style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px;">
+                </div>
+
+                <div class="form-group" style="margin-bottom: 30px; text-align: left;">
+                    <label style="display: block; margin-bottom: 8px; font-weight: 600;">Password</label>
+                    <input type="password" id="signupPassword" required
+                        style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px;">
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Create Account</button>
+            </form>
+
+            <p style="margin-top: 20px; font-size: 0.9rem;">
+                Already have an account? <a href="login.html" style="color: var(--primary); font-weight: 600;">Log
+                    In</a>
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>

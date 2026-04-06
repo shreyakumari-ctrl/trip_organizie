@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Next Memory | Travel Experiences</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">NextMemory.</div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="discover.html">Discover Trips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" id="loginBtn">Log In</a></li>
+                    <li><a href="booking.html" class="btn btn-primary">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Escape the routine.<br>Find your next adventure.</h1>
+            <p>Where do you want to disappear this weekend?</p>
+
+            <div class="hero-search">
+                <input type="text" placeholder="Search destinations (e.g., 'Manali', 'Goa')...">
+                <button class="btn btn-accent">Explore</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mood Choice Section -->
+    <section class="mood-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pick Your Vibe</h2>
+                <p>Don't just go somewhere. Feel something.</p>
+            </div>
+
+            <div class="mood-grid">
+                <!-- Mood 1: Mountains -->
+                <div class="mood-card">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Mountains">
+                    <div class="mood-overlay">
+                        <h3>Mountains</h3>
+                        <p>Peace, height, and cold air.</p>
+                    </div>
+                </div>
+
+                <!-- Mood 2: Beaches -->
+                <div class="mood-card">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80"
+                        alt="Beaches">
+                    <div class="mood-overlay">
+                        <h3>Beaches</h3>
+                        <p>Sun, sand, and ocean waves.</p>
+                    </div>
+                </div>
+
+                <!-- Mood 3: City -->
+                <div class="mood-card">
+                    <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1413&q=80"
+                        alt="City">
+                    <div class="mood-overlay">
+                        <h3>City Trips</h3>
+                        <p>Lights, culture, and energy.</p>
+                    </div>
+                </div>
+
+                <!-- Mood 4: Nature -->
+                <div class="mood-card">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+                        alt="Nature">
+                    <div class="mood-overlay">
+                        <h3>Nature</h3>
+                        <p>Forests, trails, and raw beauty.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Trips Section -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Trending This Week</h2>
+                <p>Trips people are booking right now.</p>
+            </div>
+
+            <div class="trips-grid" id="trending-grid">
+                <!-- Trip cards will be dynamically inserted here by script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Build My Trip Section -->
+    <section class="build-trip-section"
+        style="padding: 80px 0; background: var(--primary-dark); color: white; text-align: center;">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: white;">Not sure where to go?</h2>
+                <p style="color: rgba(255,255,255,0.7);">Let us choose for you.</p>
+            </div>
+
+            <div class="suggestion-tool"
+                style="background: white; padding: 30px; border-radius: 12px; max-width: 600px; margin: 0 auto; color: var(--text-main);">
+                <div class="tool-step" id="step1">
+                    <h3 style="margin-bottom: 20px;">How do you want to feel?</h3>
+                    <div
+                        style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
+                        <button class="btn btn-outline suggestion-btn" data-value="chill"
+                            style="border-color: var(--primary); color: var(--primary);">Peaceful</button>
+                        <button class="btn btn-outline suggestion-btn" data-value="adventure"
+                            style="border-color: var(--primary); color: var(--primary);">Adventurous</button>
+                        <button class="btn btn-outline suggestion-btn" data-value="party"
+                            style="border-color: var(--primary); color: var(--primary);">Energetic</button>
+                    </div>
+                </div>
+
+                <div class="tool-step" id="step2" style="display: none;">
+                    <h3 style="margin-bottom: 20px;">What's your budget?</h3>
+                    <div
+                        style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
+                        <button class="btn btn-outline suggestion-btn" data-value="low"
+                            style="border-color: var(--primary); color: var(--primary);">Budget Friendly</button>
+                        <button class="btn btn-outline suggestion-btn" data-value="high"
+                            style="border-color: var(--primary); color: var(--primary);">Luxury</button>
+                    </div>
+                </div>
+
+                <div class="tool-result" id="result" style="display: none;">
+                    <h3 style="margin-bottom: 10px; color: var(--accent);">We recommend:</h3>
+                    <h2 id="suggestion-text" style="margin-bottom: 20px;">...</h2>
+                    <a href="booking.html" class="btn btn-primary">Book This Now</a>
+                    <button class="btn btn-outline" onclick="location.reload()"
+                        style="margin-top: 10px; border-color: var(--text-muted); color: var(--text-muted); font-size: 0.8rem;">Start
+                        Over</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>NextMemory.</h4>
+                    <p>We don't sell trips. We design memories that last a lifetime.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Mountains</a></li>
+                        <li><a href="#">Beaches</a></li>
+                        <li><a href="#">City Breaks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Choose Your Next Memory. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

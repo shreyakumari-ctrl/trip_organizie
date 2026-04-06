@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk to a Human | Choose Your Next Memory</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">NextMemory.</div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover Trips</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="login.html" id="loginBtn">Log In</a></li>
+                    <li><a href="booking.html" class="btn btn-primary">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section class="contact-section" style="padding: 120px 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>We're Here for You</h2>
+                <p>Real humans. No bots. Ask us anything.</p>
+            </div>
+
+            <div class="contact-grid" style="display: flex; flex-wrap: wrap; gap: 50px; justify-content: center;">
+
+                <!-- Contact Info -->
+                <div class="contact-info"
+                    style="flex: 1; min-width: 300px; max-width: 400px; padding: 30px; background: var(--bg-light); border-radius: 12px; box-shadow: var(--shadow-sm);">
+                    <h3 style="margin-bottom: 20px;">Reach Us Directly</h3>
+
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div
+                            style="width: 50px; height: 50px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                            📞
+                        </div>
+                        <div>
+                            <h5 style="margin-bottom: 5px;">Call Us</h5>
+                            <p style="color: var(--text-muted);">+91 98765 43210</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div
+                            style="width: 50px; height: 50px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                            💬
+                        </div>
+                        <div>
+                            <h5 style="margin-bottom: 5px;">WhatsApp</h5>
+                            <p style="color: var(--text-muted);">+91 98765 43210</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div
+                            style="width: 50px; height: 50px; background: var(--text-main); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                            ✉️
+                        </div>
+                        <div>
+                            <h5 style="margin-bottom: 5px;">Email</h5>
+                            <p style="color: var(--text-muted);">hello@nextmemory.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper" style="flex: 1; min-width: 300px; max-width: 500px;">
+                    <form id="contactForm"
+                        onsubmit="event.preventDefault(); alert('Message sent! We will reply within 2 hours.');">
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <label
+                                style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--text-main);">Your
+                                Name</label>
+                            <input type="text" required
+                                style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px;">
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <label
+                                style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--text-main);">Email
+                                Address</label>
+                            <input type="email" required
+                                style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px;">
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <label
+                                style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--text-main);">Message</label>
+                            <textarea rows="5" required
+                                style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; resize: none;"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>NextMemory.</h4>
+                    <p>We don't sell trips. We design memories that last a lifetime.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Mountains</a></li>
+                        <li><a href="#">Beaches</a></li>
+                        <li><a href="#">City Breaks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Choose Your Next Memory. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

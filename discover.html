@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Trips | Choose Your Next Memory</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">NextMemory.</div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html" class="active">Discover Trips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" id="loginBtn">Log In</a></li>
+                    <li><a href="booking.html" class="btn btn-primary">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header"
+        style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-1.2.1&auto=format&fit=crop&w=1333&q=80') center/cover; padding: 100px 0; color: white; text-align: center; margin-top: 60px;">
+        <div class="container">
+            <h1>Explore the Unseen</h1>
+            <p>Curated journeys designed for the soul.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="discover-section" style="padding: 50px 0;">
+        <div class="container" style="display: flex; gap: 30px;">
+
+            <!-- Filters Sidebar -->
+            <aside class="filters"
+                style="flex: 1; min-width: 250px; background: white; padding: 20px; border-radius: 12px; box-shadow: var(--shadow-sm); height: fit-content;">
+                <h3 style="margin-bottom: 20px;">Filter Your Trip</h3>
+
+                <div class="filter-group" style="margin-bottom: 20px;">
+                    <h4 style="font-size: 1rem; margin-bottom: 10px;">Mood</h4>
+                    <label style="display: block; margin-bottom: 8px;"><input type="checkbox"> Chill & Relax</label>
+                    <label style="display: block; margin-bottom: 8px;"><input type="checkbox"> Adventure</label>
+                    <label style="display: block; margin-bottom: 8px;"><input type="checkbox"> Cultural</label>
+                    <label style="display: block; margin-bottom: 8px;"><input type="checkbox"> Party / Nightlife</label>
+                </div>
+
+                <div class="filter-group" style="margin-bottom: 20px;">
+                    <h4 style="font-size: 1rem; margin-bottom: 10px;">Budget</h4>
+                    <label style="display: block; margin-bottom: 8px;"><input type="radio" name="budget"> Under
+                        $500</label>
+                    <label style="display: block; margin-bottom: 8px;"><input type="radio" name="budget"> $500 -
+                        $1000</label>
+                    <label style="display: block; margin-bottom: 8px;"><input type="radio" name="budget"> Luxury
+                        ($1000+)</label>
+                </div>
+
+                <button class="btn btn-primary" style="width: 100%;">Apply Filters</button>
+            </aside>
+
+            <!-- Trips Grid -->
+            <div class="trips-grid-wrapper" style="flex: 3;">
+                <div class="trips-grid">
+                    <!-- Trips will be loaded dynamically by script.js -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>NextMemory.</h4>
+                    <p>We don't sell trips. We design memories that last a lifetime.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Mountains</a></li>
+                        <li><a href="#">Beaches</a></li>
+                        <li><a href="#">City Breaks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Choose Your Next Memory. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

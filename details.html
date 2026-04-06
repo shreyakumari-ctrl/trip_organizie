@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tripTitle">Trip Details | Choose Your Next Memory</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">NextMemory.</div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover Trips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" id="loginBtn">Log In</a></li>
+                    <li><a href="booking.html" class="btn btn-primary">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero"
+        style="height: 60vh; background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), grey center/cover no-repeat;">
+        <div class="container hero-content">
+            <h1 id="heroTitle">Loading Trip...</h1>
+            <p id="heroSubtitle">Please wait while we fetch the best experience for you.</p>
+        </div>
+    </section>
+
+    <!-- Trip Overview -->
+    <section class="trip-overview" style="padding: 60px 0; background: white;">
+        <div class="container" style="display: flex; gap: 50px; align-items: start; flex-wrap: wrap;">
+            <div style="flex: 2; min-width: 300px;">
+                <h2 style="margin-bottom: 20px; color: var(--primary-dark);">Why this trip?</h2>
+                <p id="whyThisTrip"
+                    style="font-size: 1.1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 30px;">
+                    Loading description...
+                </p>
+
+                <h3 style="margin-bottom: 20px;">The Itinerary</h3>
+
+                <div class="timeline" id="itineraryContainer">
+                    <!-- Dynamic Itinerary Items Will Be Injected Here via script.js -->
+                    <div class="day-card"
+                        style="border-left: 4px solid var(--accent); padding-left: 20px; margin-bottom: 30px;">
+                        <h4 style="color: var(--accent);">Loading Itinerary...</h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Booking Sidebar -->
+            <div
+                style="flex: 1; min-width: 250px; background: var(--bg-body); padding: 30px; border-radius: 12px; border: 1px solid var(--border-color); position: sticky; top: 100px;">
+                <h3 style="margin-bottom: 20px;">Book this Experience</h3>
+                <div style="font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 10px;">
+                    <span id="sidebarPrice">...</span>
+                    <span style="font-size: 1rem; color: var(--text-muted); font-weight: 400;">/ person</span>
+                </div>
+
+                <div style="margin-bottom: 20px; font-weight: bold; color: var(--text-muted);">
+                    <i class="fas fa-clock"></i> <span id="tripDuration">...</span>
+                </div>
+
+                <ul id="inclusionsList" style="margin-bottom: 30px; color: var(--text-muted);">
+                    <!-- Dynamic Inclusions -->
+                    <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--primary);"></i>
+                        Loading...</li>
+                </ul>
+
+                <a href="booking.html" class="btn btn-primary"
+                    style="width: 100%; text-align: center; margin-bottom: 15px;">Reserve Your Spot</a>
+                <p style="text-align: center; font-size: 0.9rem; color: var(--text-muted);">No payment needed today.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>NextMemory.</h4>
+                    <p>We don't sell trips. We design memories that last a lifetime.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="discover.html?mood=mountains">Mountains</a></li>
+                        <li><a href="discover.html?mood=beaches">Beaches</a></li>
+                        <li><a href="discover.html?mood=city">City Breaks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Choose Your Next Memory. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

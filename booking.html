@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve Your Spot | Choose Your Next Memory</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">NextMemory.</div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover Trips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" id="loginBtn">Log In</a></li>
+                    <li><a href="booking.html" class="active btn btn-primary">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section class="booking-section"
+        style="padding: 120px 0; background: linear-gradient(to right, #FAFAFA 50%, #E0F7FA 50%); min-height: 100vh;">
+        <div class="container" style="display: flex; align-items: center; justify-content: center;">
+
+            <div class="booking-card"
+                style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-xl); width: 100%; max-width: 600px;">
+                <div class="section-title" style="text-align: left; margin-bottom: 30px;">
+                    <h2>Your Adventure Awaits</h2>
+                    <p>No immediate payment. We'll call you to confirm.</p>
+                </div>
+
+                <form id="bookingForm"
+                    onsubmit="event.preventDefault(); alert('Booking request sent! We will call you shortly.');">
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label
+                            style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--text-main);">Full
+                            Name</label>
+                        <input type="text" placeholder="Who's traveling?" required
+                            style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; font-size: 1rem;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label
+                            style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--text-main);">Phone
+                            Number</label>
+                        <input type="tel" placeholder="Where can we reach you?" required
+                            style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; font-size: 1rem;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label
+                            style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--text-main);">Trip
+                            Code / Destination</label>
+                        <select
+                            style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; font-size: 1rem; background: white;">
+                            <option>Misty Mornings in Darjeeling</option>
+                            <option>The Hidden Side of Goa</option>
+                            <option>Parisian Nights</option>
+                            <option>Kerala Backwaters</option>
+                            <option>Swiss Alps Adventure</option>
+                            <option>Venice Grand Canal</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                            <input type="checkbox" style="width: 18px; height: 18px; accent-color: var(--primary);">
+                            <span>Request a Travel Buddy (Join a group)</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary"
+                        style="width: 100%; padding: 15px; font-size: 1.1rem;">Reserve My Spot</button>
+
+                    <p style="text-align: center; margin-top: 15px; font-size: 0.9rem; color: var(--text-muted);">
+                        <i class="fas fa-lock"></i> Your details are safe with us.
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
